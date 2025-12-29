@@ -636,18 +636,18 @@
             },
             popularity: {
                 1: [
-                    { rank: 1, name: 'IndiGo (6E)', value: '12,450', class: '' },
-                    { rank: 2, name: 'Spirit Airlines (NK)', value: '8,320', class: '' },
-                    { rank: 3, name: 'Frontier (F9)', value: '6,180', class: '' },
-                    { rank: 4, name: 'Azul Airlines (AD)', value: '5,420', class: '' },
-                    { rank: 5, name: 'Lion Airlines (JT)', value: '4,850', class: '' }
+                    { rank: 1, name: 'IndiGo (6E)', value: '', class: '' },
+                    { rank: 2, name: 'Spirit Airlines (NK)', value: '', class: '' },
+                    { rank: 3, name: 'Frontier (F9)', value: '', class: '' },
+                    { rank: 4, name: 'Azul Airlines (AD)', value: '', class: '' },
+                    { rank: 5, name: 'Lion Airlines (JT)', value: '', class: '' }
                 ],
                 2: [
-                    { rank: 6, name: 'Scoot (TR)', value: '4,210', class: '' },
-                    { rank: 7, name: 'Cebu Pacific (5J)', value: '3,890', class: '' },
-                    { rank: 8, name: 'VietJet Air (VJ)', value: '3,450', class: '' },
-                    { rank: 9, name: 'AirAsia X (D7)', value: '3,120', class: '' },
-                    { rank: 10, name: 'Jetstar (JQ)', value: '2,890', class: '' }
+                    { rank: 6, name: 'Scoot (TR)', value: '', class: '' },
+                    { rank: 7, name: 'Cebu Pacific (5J)', value: '', class: '' },
+                    { rank: 8, name: 'VietJet Air (VJ)', value: '', class: '' },
+                    { rank: 9, name: 'AirAsia X (D7)', value: '', class: '' },
+                    { rank: 10, name: 'Jetstar (JQ)', value: '', class: '' }
                 ]
             },
             highVol: {
@@ -701,10 +701,12 @@
                 else if (item.rank === 2) numClass = 'top-2';
                 else if (item.rank === 3) numClass = 'top-3';
                 
+                const valueHtml = item.value ? `<span class="ranking-value ${item.class}">${item.value}</span>` : '';
+                
                 return `<li class="ranking-item">
                     <span class="ranking-num ${numClass}" ${numStyle ? 'style="'+numStyle+'"' : ''}>${item.rank}</span>
                     <span class="ranking-name"><a href="airline-detail-en.html">${item.name}</a></span>
-                    <span class="ranking-value ${item.class}">${item.value}</span>
+                    ${valueHtml}
                 </li>`;
             }).join('');
             
