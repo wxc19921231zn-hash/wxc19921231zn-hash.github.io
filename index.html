@@ -302,19 +302,19 @@
         </div>
 
         <!-- 3.2.1 平台航司表现排名 -->
-        <div class="grid-2">
-            <div class="section">
-                <div class="section-header">
-                    <div>
-                        <div class="section-title">Platform Airline Rankings</div>
-                        <div class="section-subtitle">Atlas platform overall supply quality</div>
-                    </div>
-                    <div class="time-selector">
-                        <button class="time-btn">Yesterday</button>
-                        <button class="time-btn active">Last 7 Days</button>
-                    </div>
+        <div class="section">
+            <div class="section-header">
+                <div>
+                    <div class="section-title">Platform Airline Rankings</div>
+                    <div class="section-subtitle">Atlas platform overall supply quality</div>
                 </div>
-                <div class="section-body">
+                <div class="time-selector">
+                    <button class="time-btn">Yesterday</button>
+                    <button class="time-btn active">Last 7 Days</button>
+                </div>
+            </div>
+            <div class="section-body">
+                <div class="grid-3">
                     <!-- 验价成功率 Top10 -->
                     <div class="ranking-section">
                         <div class="ranking-label">
@@ -367,38 +367,6 @@
                         <div class="ranking-pagination">
                             <button class="ranking-page-btn active" onclick="showPage('routePopularity', 1)">1-5</button>
                             <button class="ranking-page-btn" onclick="showPage('routePopularity', 2)">6-10</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section">
-                <div class="section-header">
-                    <div>
-                        <div class="section-title">Platform Airline Rankings</div>
-                        <div class="section-subtitle">Atlas platform overall supply quality</div>
-                    </div>
-                    <div class="time-selector">
-                        <button class="time-btn">Yesterday</button>
-                        <button class="time-btn active">Last 7 Days</button>
-                    </div>
-                </div>
-                <div class="section-body">
-                    <!-- 搜索有结果率 Top10 -->
-                    <div class="ranking-section">
-                        <div class="ranking-label">
-                            Search Result Rate Top10
-                            <span class="info-icon">ⓘ<div class="tooltip"><div class="tooltip-title">Top 10 by Search Result Rate</div>The 10 airlines with the highest search result rate on the Atlas platform.<div class="tooltip-refresh">🔄 Refresh: Daily at 14:00</div></div></span>
-                        </div>
-                        <ul class="ranking-list" id="searchResultRateList">
-                            <li class="ranking-item"><span class="ranking-num top-1">1</span><span class="ranking-name"><a href="airline-detail-en.html">IndiGo (6E)</a></span><span class="ranking-value success">96.8%</span></li>
-                            <li class="ranking-item"><span class="ranking-num top-2">2</span><span class="ranking-name"><a href="airline-detail-en.html">Spirit Airlines (NK)</a></span><span class="ranking-value success">95.2%</span></li>
-                            <li class="ranking-item"><span class="ranking-num top-3">3</span><span class="ranking-name"><a href="airline-detail-en.html">Frontier (F9)</a></span><span class="ranking-value success">94.5%</span></li>
-                            <li class="ranking-item"><span class="ranking-num">4</span><span class="ranking-name"><a href="airline-detail-en.html">Azul Airlines (AD)</a></span><span class="ranking-value success">93.8%</span></li>
-                            <li class="ranking-item"><span class="ranking-num">5</span><span class="ranking-name"><a href="airline-detail-en.html">Lion Airlines (JT)</a></span><span class="ranking-value success">92.4%</span></li>
-                        </ul>
-                        <div class="ranking-pagination">
-                            <button class="ranking-page-btn active" onclick="showPage('searchResultRate', 1)">1-5</button>
-                            <button class="ranking-page-btn" onclick="showPage('searchResultRate', 2)">6-10</button>
                         </div>
                     </div>
                 </div>
@@ -505,23 +473,6 @@
                             <li class="ranking-item"><span class="ranking-num" style="background:#fffbe6;color:#d48806;">3</span><span class="ranking-name"><a href="airline-detail-en.html">Wizz Air (W6)</a></span><span class="ranking-value warning">80.5%</span></li>
                             <li class="ranking-item"><span class="ranking-num">4</span><span class="ranking-name"><a href="airline-detail-en.html">Ryanair (FR)</a></span><span class="ranking-value warning">82.1%</span></li>
                             <li class="ranking-item"><span class="ranking-num">5</span><span class="ranking-name"><a href="airline-detail-en.html">easyJet (U2)</a></span><span class="ranking-value warning">83.6%</span></li>
-                        </ul>
-                    </div>
-                    <div class="ranking-section">
-                        <div class="ranking-label">
-                            Search Result Rate
-                            <select class="filter-select" style="margin-left: 8px; padding: 2px 8px; font-size: 12px;">
-                                <option value="top5">Top 5</option>
-                                <option value="bottom5" selected>Bottom 5</option>
-                            </select>
-                            <span class="info-icon">ⓘ<div class="tooltip"><div class="tooltip-title">Airlines by Search Result Rate</div>Airlines with the highest/lowest search result rates.<div class="tooltip-refresh">🔄 Refresh: Daily at 14:00</div></div></span>
-                        </div>
-                        <ul class="ranking-list">
-                            <li class="ranking-item"><span class="ranking-num" style="background:#fff2f0;color:#ff4d4f;">1</span><span class="ranking-name"><a href="airline-detail-en.html">Vueling (VY)</a></span><span class="ranking-value error">78.5%</span></li>
-                            <li class="ranking-item"><span class="ranking-num" style="background:#fff2f0;color:#ff4d4f;">2</span><span class="ranking-name"><a href="airline-detail-en.html">Pegasus (PC)</a></span><span class="ranking-value error">82.3%</span></li>
-                            <li class="ranking-item"><span class="ranking-num" style="background:#fffbe6;color:#d48806;">3</span><span class="ranking-name"><a href="airline-detail-en.html">Wizz Air (W6)</a></span><span class="ranking-value warning">85.6%</span></li>
-                            <li class="ranking-item"><span class="ranking-num">4</span><span class="ranking-name"><a href="airline-detail-en.html">Ryanair (FR)</a></span><span class="ranking-value warning">87.2%</span></li>
-                            <li class="ranking-item"><span class="ranking-num">5</span><span class="ranking-name"><a href="airline-detail-en.html">easyJet (U2)</a></span><span class="ranking-value warning">88.4%</span></li>
                         </ul>
                     </div>
                 </div>
